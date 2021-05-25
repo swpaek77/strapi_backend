@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ItemCode": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "ItemName": {
+      "type": "text"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "ItemCodeUID": {
+      "type": "uid",
+      "targetField": "ItemCode"
+    }
+  }
+}
