@@ -9271,7 +9271,7 @@ strapi-generate@3.6.2:
     reportback "^2.0.2"
     strapi-utils "3.6.2"
 
-strapi-helper-plugin@3.6.2:
+strapi-helper-plugin@3.6.2, strapi-helper-plugin@^3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/strapi-helper-plugin/-/strapi-helper-plugin-3.6.2.tgz#ab46db4801da4e511f4c13a757de0d906032104a"
   integrity sha512-831IAYkFIyp6KBpccbkYbRD8sU4AI2AoksTkXi4eU8DNEEW47Lg7wyOwt8aSmsT5/5YbfnRV0cdNS3vgedK43w==
