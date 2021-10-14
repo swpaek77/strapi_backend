@@ -117,5 +117,5 @@ build
 # Documentation
 ############################
 
-extensions/documentation/documentation/1.0.0/full_documentation.json
-extensions/documentation/documentation/public/index.html
+/extensions/documentation/documentation/1.0.0/full_documentation.json
+/extensions/documentation/public/index.html
