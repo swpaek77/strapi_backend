@@ -2,16 +2,20 @@
   "kind": "collectionType",
   "collectionName": "tests",
   "info": {
-    "name": "Test"
+    "name": "Test",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "test1": {
+      "type": "string"
+    },
+    "test2": {
       "type": "string"
     }
   }
