@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lotto-histories",
+      "handler": "lotto-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lotto-histories/count",
+      "handler": "lotto-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lotto-histories/:id",
+      "handler": "lotto-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lotto-histories",
+      "handler": "lotto-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lotto-histories/:id",
+      "handler": "lotto-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lotto-histories/:id",
+      "handler": "lotto-history.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

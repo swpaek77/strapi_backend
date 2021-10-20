@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lotto_histories",
+  "info": {
+    "name": "lotto-history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RTLRID": {
+      "type": "string",
+      "required": true
+    },
+    "DRW_NO": {
+      "type": "biginteger",
+      "required": true
+    },
+    "WIN_TYPE": {
+      "type": "string",
+      "required": true
+    },
+    "NO": {
+      "type": "biginteger"
+    },
+    "FIRMNM": {
+      "type": "text"
+    },
+    "WRTIE_TYPE": {
+      "type": "string"
+    },
+    "BPLCDORODTLADRES": {
+      "type": "text"
+    }
+  }
+}

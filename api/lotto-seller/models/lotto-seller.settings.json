@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lotto_sellers",
+  "info": {
+    "name": "lotto_seller"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RTLRID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "RTLRSTRTELNO": {
+      "type": "string"
+    },
+    "BPLCDORODTLADRES": {
+      "type": "text"
+    },
+    "BPLCLOCPLC1": {
+      "type": "string"
+    },
+    "BPLCLOCPLC2": {
+      "type": "string"
+    },
+    "BPLCLOCPLC3": {
+      "type": "string"
+    },
+    "BPLCLOCPLC4": {
+      "type": "string"
+    },
+    "BPLCLOCPLCDTLADRES": {
+      "type": "text"
+    },
+    "DEAL520": {
+      "type": "string"
+    },
+    "DEAL645": {
+      "type": "string"
+    },
+    "DEALSPEETO": {
+      "type": "string"
+    },
+    "FIRMNM": {
+      "type": "text"
+    },
+    "LATITUDE": {
+      "type": "float"
+    },
+    "LONGITUDE": {
+      "type": "float"
+    },
+    "RECORDNO": {
+      "type": "biginteger"
+    }
+  }
+}

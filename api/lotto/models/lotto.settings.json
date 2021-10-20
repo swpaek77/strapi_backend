@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lottos",
+  "info": {
+    "name": "lotto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LottoNo": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "LotteryDate": {
+      "type": "date"
+    },
+    "Lotto_1": {
+      "type": "string"
+    },
+    "Lotto_2": {
+      "type": "string"
+    },
+    "Lotto_3": {
+      "type": "string"
+    },
+    "Lotto_4": {
+      "type": "string"
+    },
+    "Lotto_5": {
+      "type": "string"
+    },
+    "Lotto_6": {
+      "type": "string"
+    },
+    "Lotto_b": {
+      "type": "string"
+    },
+    "LottoList": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "firstAccumamnt": {
+      "type": "biginteger"
+    },
+    "firstPrzwnerCo": {
+      "type": "biginteger"
+    },
+    "firstWinamnt": {
+      "type": "biginteger"
+    },
+    "totSellamnt": {
+      "type": "biginteger"
+    }
+  }
+}
