@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lotto-users",
+      "handler": "lotto-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lotto-users/count",
+      "handler": "lotto-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lotto-users/:id",
+      "handler": "lotto-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lotto-users",
+      "handler": "lotto-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lotto-users/get-token",
+      "handler": "lotto-user.GetToken",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lotto-users/:id",
+      "handler": "lotto-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lotto-users/:id",
+      "handler": "lotto-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

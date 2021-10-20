@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lotto_users",
+  "info": {
+    "name": "lotto-user",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UniqueId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "FCMToken": {
+      "type": "string"
+    },
+    "LastAccess": {
+      "type": "datetime"
+    },
+    "Device": {
+      "type": "enumeration",
+      "enum": [
+        "ANDROID",
+        "IOS"
+      ]
+    },
+    "isNotice": {
+      "type": "boolean"
+    }
+  }
+}
