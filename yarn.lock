@@ -6756,6 +6756,11 @@ nodemailer-shared@1.1.0:
   dependencies:
     nodemailer-fetch "1.6.0"
 
+nodemailer@^6.4.6:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.7.0.tgz#86614722c4e0c33d1b5b02aecb90d6d629932b0d"
+  integrity sha512-AtiTVUFHLiiDnMQ43zi0YgkzHOEWUkhDgPlBXrsDzJiJvB29Alo4OKxHQ0ugF3gRqRQIneCLtZU3yiUo7pItZw==
+
 noop-logger@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/noop-logger/-/noop-logger-0.1.1.tgz#94a2b1633c4f1317553007d8966fd0e841b6a4c2"
@@ -9505,6 +9510,14 @@ strapi-provider-email-sendmail@3.6.2:
   dependencies:
     sendmail "^1.6.1"
     strapi-utils "3.6.2"
+
+strapi-provider-email-smtp@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/strapi-provider-email-smtp/-/strapi-provider-email-smtp-1.0.3.tgz#b207d9fcbe1279ab03f1b5cfa1b03a50ae85b7bf"
+  integrity sha512-f66dyyWygzLmxHuzQfiPjX6vSZE/y2za4bwYBRKWkSeLu7WyVnwJ8xyfnleHXWhan7Xmo2QRoFfUOq367su0Rw==
+  dependencies:
+    lodash "^4.17.15"
+    nodemailer "^6.4.6"
 
 strapi-provider-upload-local@3.6.2:
   version "3.6.2"
