@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "room": {
-      "type": "string"
-    },
     "kakaouid": {
       "type": "biginteger"
+    },
+    "room": {
+      "type": "string"
     },
     "message": {
       "type": "text"

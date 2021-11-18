@@ -33,6 +33,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/messages/kakaomsg",
+      "handler": "message.kakaoMsg",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/messages/:id",
       "handler": "message.update",
