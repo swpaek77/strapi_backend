@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/messages": {
+    "/kakaouids": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Message"
+                    "$ref": "#/components/schemas/Kakaouid"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Message"
+          "Kakaouid"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Message"
+                  "$ref": "#/components/schemas/Kakaouid"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Message"
+          "Kakaouid"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMessage"
+                "$ref": "#/components/schemas/NewKakaouid"
               }
             }
           }
         }
       }
     },
-    "/messages/count": {
+    "/kakaouids/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Message"
+          "Kakaouid"
         ],
         "parameters": []
       }
     },
-    "/messages/{id}": {
+    "/kakaouids/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Message"
+                  "$ref": "#/components/schemas/Kakaouid"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Message"
+          "Kakaouid"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Message"
+                  "$ref": "#/components/schemas/Kakaouid"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Message"
+          "Kakaouid"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMessage"
+                "$ref": "#/components/schemas/NewKakaouid"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Message"
+          "Kakaouid"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Message": {
+      "Kakaouid": {
         "required": [
           "id"
         ],
@@ -522,27 +522,35 @@
           "id": {
             "type": "string"
           },
-          "message": {
+          "sender": {
             "type": "string"
           },
-          "room": {
+          "imageProfileBase64": {
             "type": "string"
           },
-          "kakaouid": {
-            "type": "integer"
+          "walletKey": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           }
         }
       },
-      "NewMessage": {
+      "NewKakaouid": {
         "properties": {
-          "message": {
+          "sender": {
             "type": "string"
           },
-          "room": {
+          "imageProfileBase64": {
             "type": "string"
           },
-          "kakaouid": {
-            "type": "integer"
+          "walletKey": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
           },
           "created_by": {
             "type": "string"
@@ -556,7 +564,7 @@
   },
   "tags": [
     {
-      "name": "Message"
+      "name": "Kakaouid"
     }
   ]
 }

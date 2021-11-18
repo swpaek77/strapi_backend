@@ -1,24 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "messages",
+  "collectionName": "kakaouids",
   "info": {
-    "name": "Message",
-    "description": ""
+    "name": "Kakaouid"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "room": {
+    "sender": {
       "type": "string"
     },
-    "kakaouid": {
-      "type": "biginteger"
+    "imageProfileBase64": {
+      "type": "text"
     },
-    "message": {
+    "walletKey": {
       "type": "text"
     }
   }
