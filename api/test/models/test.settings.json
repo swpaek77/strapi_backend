@@ -13,10 +13,10 @@
   "pluginOptions": {},
   "attributes": {
     "test1": {
-      "type": "string"
+      "type": "text"
     },
     "test2": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

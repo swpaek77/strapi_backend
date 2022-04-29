@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "df_mobile_coupons",
+  "info": {
+    "name": "DfMobileCoupon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "expireDate": {
+      "type": "date"
+    },
+    "publishDate": {
+      "type": "date"
+    },
+    "couponCode": {
+      "type": "string"
+    },
+    "couponContent": {
+      "type": "richtext"
+    }
+  }
+}

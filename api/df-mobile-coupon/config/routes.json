@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/df-mobile-coupons",
+      "handler": "df-mobile-coupon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/df-mobile-coupons/count",
+      "handler": "df-mobile-coupon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/df-mobile-coupons/:id",
+      "handler": "df-mobile-coupon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/df-mobile-coupons",
+      "handler": "df-mobile-coupon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/df-mobile-coupons/:id",
+      "handler": "df-mobile-coupon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/df-mobile-coupons/:id",
+      "handler": "df-mobile-coupon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
